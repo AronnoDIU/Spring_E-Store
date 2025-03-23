@@ -18,6 +18,19 @@
             text-align: center;
             padding: 20px 0;
         }
+        .hero-section {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+        }
     </style>
 </head>
 <body>
@@ -44,17 +57,28 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">Register</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Welcome to Spring E-Store</h1>
+    </div>
+
     <!-- Page Content -->
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">Welcome to Spring E-Store</h1>
-                <p class="lead">Your one-stop shop for all your needs</p>
+                <h1 class="mt-5">Your one-stop shop for all your needs</h1>
+                <p class="lead">High quality products, fast delivery, and 24/7 customer support</p>
                 <ul class="list-unstyled">
                     <li>High quality products</li>
                     <li>Fast delivery</li>
