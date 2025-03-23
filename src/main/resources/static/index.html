@@ -8,28 +8,39 @@
     <style>
         body {
             padding-top: 56px;
-        }
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            height: 60px;
-            background-color: #f5f5f5;
-            text-align: center;
-            padding: 20px 0;
+            background-color: #f8f9fa;
         }
         .hero-section {
-            background: url('https://via.placeholder.com/1500x400') no-repeat center center;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('path/to/your/background-image.jpg') no-repeat center center;
             background-size: cover;
-            height: 400px;
-            color: white;
-            text-align: center;
+            height: 100vh;
+            color: #333;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
+            padding: 20px;
         }
         .hero-section h1 {
             font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .btn-explore {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 20px 0;
         }
     </style>
 </head>
@@ -44,15 +55,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -67,14 +76,18 @@
 
     <!-- Hero Section -->
     <div class="hero-section">
-        <h1>Welcome to Spring E-Store</h1>
+        <div>
+            <h1>Give Your Workout A New Style!</h1>
+            <p>Success isn't always about greatness. It's about consistency. Consistent hard work gains success. Greatness will come.</p>
+            <button class="btn-explore">Explore Now →</button>
+        </div>
     </div>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">Your one-stop shop for all your needs</h1>
+                <h1>Your one-stop shop for all your needs</h1>
                 <p class="lead">High quality products, fast delivery, and 24/7 customer support</p>
                 <ul class="list-unstyled">
                     <li>High quality products</li>
