@@ -34,4 +34,10 @@ public class HomeController {
         // Implement user registration logic here
         return "redirect:/";
     }
+
+    @GetMapping("/products")
+    public String viewProducts(@RequestParam(required = false) String category) {
+        // Implement logic to display products based on category
+        return "products.html";
+    }
 }
