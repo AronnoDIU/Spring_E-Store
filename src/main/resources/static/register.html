@@ -30,6 +30,20 @@
             margin-top: 10px;
             text-align: center;
         }
+        .theme-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        body.dark-mode .register-container {
+            background-color: #444;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -62,6 +76,8 @@
         </div>
     </nav>
 
+    <img src="/images/sun.png" class="theme-toggle" id="theme-toggle" alt="Toggle Theme">
+
     <div class="register-container">
         <h2 class="text-center">Register</h2>
         <form action="/register" method="post">
@@ -85,5 +101,17 @@
             <a href="/login" class="login-link">Already registered? Login here</a>
         </form>
     </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                themeToggle.src = "/images/moon.png";
+            } else {
+                themeToggle.src = "/images/sun.png";
+            }
+        });
+    </script>
 </body>
 </html>

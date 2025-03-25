@@ -34,20 +34,35 @@ Follow these steps to set up the project on your local machine:
     cd Spring_E-Store
     ```
 
-2. **Build the project**:
+2. **Place the icon images**:
+    Ensure you have the following images in the `src/main/resources/static/images` directory:
+    - `sun.png`
+    - `moon.png`
+
+3. **Set up the database**:
+    - Install MySQL and create a database named `spring_estore`.
+    - Update the `src/main/resources/application.properties` file with your database credentials:
+      ```properties
+      spring.datasource.url=jdbc:mysql://localhost:3306/spring_estore
+      spring.datasource.username=your_username
+      spring.datasource.password=your_password
+      spring.jpa.hibernate.ddl-auto=update
+      ```
+
+4. **Build the project**:
     ```bash
     mvn clean install
     ```
 
-3. **Run the application**:
+5. **Run the application**:
     ```bash
     mvn spring-boot:run
     ```
 
-4. **Access the application**:
+6. **Access the application**:
     Open your web browser and go to `http://localhost:8080`.
 
-5. **Login and Registration**:
+7. **Login and Registration**:
     - Go to `http://localhost:8080/login` to login.
     - Go to `http://localhost:8080/register` to register a new account.
 
