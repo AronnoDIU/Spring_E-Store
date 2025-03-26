@@ -57,4 +57,10 @@ public class HomeController {
         logger.info("Accessing contact page");
         return "contact.html";
     }
+
+    @GetMapping("/about")
+    public String about() {
+        logger.info("Accessing about page");
+        return "about.html";
+    }
 }
