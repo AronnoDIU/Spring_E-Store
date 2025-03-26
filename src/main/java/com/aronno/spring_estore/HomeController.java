@@ -51,4 +51,10 @@ public class HomeController {
         // Implement logic to display products based on category
         return "products.html";
     }
+
+    @GetMapping("/contact")
+    public String contact() {
+        logger.info("Accessing contact page");
+        return "contact.html";
+    }
 }
