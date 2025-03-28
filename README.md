@@ -12,6 +12,7 @@ Welcome to **Spring E-Store**, your one-stop solution for all your e-commerce ne
 - **User Authentication**: Secure login and registration for users.
 - **Admin Panel**: Manage products, orders, and users from an admin dashboard.
 - **Payment Integration**: Seamless integration with popular payment gateways.
+- **Dark Mode**: Toggle between light and dark themes for better user experience.
 
 ## Screenshots
 
@@ -92,3 +93,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any queries or support, please contact us at support@springestore.com.
 
 Thank you for considering Spring E-Store as your e-commerce solution. We look forward to serving you and making your online shopping experience seamless.
+
